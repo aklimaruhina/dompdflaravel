@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Nikosh';
+    src: url('Nikosh.eot');
+    src: url('Nikosh.eot?#iefix') format('embedded-opentype'),
+        url('Nikosh.woff2') format('woff2'),
+        url('Nikosh.woff') format('woff'),
+        url('Nikosh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
