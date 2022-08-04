@@ -20,7 +20,7 @@
 			</tr>
 			<tr>
 				<td>আকলিমা</td>
-				<td>০১৭৪৫১৩৪১৮২</td>
+				<td>০১৭৪৮৫১২১৩৪</td>
 				<td>mizanjust@gmail.com</td> 
 			</tr>
 			<tr>
