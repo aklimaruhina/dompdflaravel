@@ -49,5 +49,6 @@ class ReportController extends Controller {
   }
 }
 ```
+![image](https://user-images.githubusercontent.com/7622577/182757879-5cc44238-4aee-4cc8-871e-f67bca0cc606.png)
 
 
