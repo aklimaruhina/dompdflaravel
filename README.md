@@ -54,4 +54,5 @@ class ReportController extends Controller {
 ## Some Laravel cheatsheet
 Add some faker data
 
-[Link for cheatsheet](https://shortcode.dev/laravel-cheatsheet)
+- [shortcode](https://shortcode.dev/laravel-cheatsheet)
+- [bagisto](https://github.com/bagisto/laravel-data-faker/)
