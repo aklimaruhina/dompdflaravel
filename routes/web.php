@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\HTTP\Controllers\PdfController;
+// use App\HTTP\Controllers\PdfController;
+use App\HTTP\Controllers\Front\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('/clear-cache', function () {
     return 'cleared';
 });
 Route::get('/pdf', [PdfController::class, 'printpdf'])->name('printpdf');
+Route::get('/customer', [FrontendController::class, 'index']);

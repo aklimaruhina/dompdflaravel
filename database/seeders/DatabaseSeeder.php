@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use App\Models\Customer;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         // Post:factory()->count(100)->create();
+		Customer::factory(100)->create();
     }
 }

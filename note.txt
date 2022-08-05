@@ -1,0 +1,33 @@
+composer require yajra/laravel-datatables:^9.0
+
+    Yajra\DataTables\DataTablesServiceProvider::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class
+
+php artisan vendor:publish --tag=datatables
+
+php artisan make:factory UserFactory --model=User
+
+//inside userfactory add model name before class and this code after class
+protected $model = User::class;
+
+php artisan make:seed UserTableSeeder
+
+User::factory()->count(50)->create();
+
+
+php artisan db:seed --class=UserTableSeeder
+
+
+php artisan datatables:make User
+
+//Change this file in app\Datatables folder
+public function html()
+    {
+        return $this->builder()
+                    ->setTableId('customer-table')
+                    ->columns($this->getColumns())
+                    ->minifiedAjax()
+                    ->orderBy(1);
+                   
+    }
+getColumns() //Add column name of table
