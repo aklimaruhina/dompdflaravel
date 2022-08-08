@@ -56,3 +56,22 @@ Add some faker data
 
 - [shortcode](https://shortcode.dev/laravel-cheatsheet)
 - [bagisto](https://github.com/bagisto/laravel-data-faker/)
+## Remove comma from your array 
+
+```php
+@php
+    $membeid = json_decode($member->cat_id, true);
+    $num_count = 0;
+    $num_of_items = count($membeid);
+    @endphp
+
+    @foreach($membeid as  $key => $cat)
+       {{ App\Category::getinfo($cat) }}
+       @php $num_count = $num_count + 1; @endphp
+
+       @if($num_count < $num_of_items)
+            @php echo ", "; @endphp
+        @endif
+
+    @endforeach
+```
